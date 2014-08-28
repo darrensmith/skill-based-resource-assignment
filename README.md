@@ -9,37 +9,64 @@ Example of Algorithm:
 
 Sample Set's Weightings...
 
+
 R = Resource
+
 S = Skill
+
 E = Event
 
+
 R1
+
   S1: 0.2
+  
   S2: 0.7
+  
   S3: 0.6
+  
 R2
+
   S1: 0.1
+  
   S2: 0.9
+  
   S3: 0.8
+  
 R3
+
   S1: 0.4
+  
   S2: 0.3
+  
   S3: 0.8
 
 E1-1
+
   S1: 0.5
+  
 E2-1
+
   S1: 0.6
+  
   S2: 0.3
+  
 E3-1
+
   S1: 0.3
+  
   S3: 0.5
 
 Score Calculation:
+
 1. If weight of a skill of the resource is greater than or equal to the weight of the skill against the event then set to 1 for the match; else
+
 2. If weight of a skill of the resource is less than the weight of the skill against the event then set to Resource-Skill-Weight / Event-Skill-Weight
+
 3. When calculating sub-scores only calculate one per event skill. Leave out unused resource skills
+
 4. Add the sub-score for each skill-match up
+
 5. Divide by number of skill matches to get assignment score
 
 1. Calculate Assignment Scores for R1
